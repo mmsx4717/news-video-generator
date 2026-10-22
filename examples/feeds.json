@@ -1,0 +1,8 @@
+{
+  "feeds": [
+    {
+      "name": "RSSHub releases",
+      "url": "https://github.com/DIYgod/RSSHub/releases.atom"
+    }
+  ]
+}

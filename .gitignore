@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+!.env.example
+runs/
+public/
+out/
+dist/
+.playwright/
+__pycache__/
+*.pyc
+.DS_Store

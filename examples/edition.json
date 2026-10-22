@@ -1,0 +1,29 @@
+{
+  "title": "RSS 到视频",
+  "date": "2026-01-01",
+  "maxSeconds": 420,
+  "stories": [
+    {
+      "id": "rss-demo",
+      "company": "工作流演示",
+      "title": "把信息流，变成一支资讯视频",
+      "points": ["RSS 收集原始线索", "回到原文核验事实", "由 Agent 编排音画"],
+      "sources": ["https://github.com/DIYgod/RSSHub"],
+      "cues": [
+        {
+          "text": "先用 RSS 收集线索，再回到原文核实具体变化",
+          "pauseMs": 400
+        },
+        {
+          "text": "产品发布不能只念标题，要把用途和开放条件讲清楚",
+          "pauseMs": 450
+        },
+        {
+          "text": "这是一份静音布局示例，真实配音需要自己配置音色",
+          "pauseMs": 350
+        }
+      ]
+    }
+  ],
+  "ticker": []
+}

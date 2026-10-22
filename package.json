@@ -1,0 +1,46 @@
+{
+  "name": "news-video-generator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "资讯视频生成项目：RSS → Agent 编辑 → MiniMax → Remotion",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "demo": "node --env-file-if-exists=.env scripts/demo.mjs",
+    "collect": "node --env-file-if-exists=.env scripts/collect.mjs",
+    "capture": "node --env-file-if-exists=.env scripts/capture.mjs",
+    "tts": "node --env-file-if-exists=.env scripts/tts.mjs",
+    "assemble": "node --env-file-if-exists=.env scripts/assemble.mjs",
+    "dev": "remotion studio src/index.ts --no-open",
+    "check": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "stills": "node --env-file-if-exists=.env scripts/render.mjs --stills",
+    "render": "node --env-file-if-exists=.env scripts/render.mjs",
+    "review": "node --env-file-if-exists=.env scripts/review.mjs",
+    "deliver": "node --env-file-if-exists=.env scripts/deliver.mjs",
+    "audit": "node --env-file-if-exists=.env scripts/package.mjs --audit",
+    "package": "node --env-file-if-exists=.env scripts/package.mjs",
+    "format": "prettier --write scripts src tests docs skills examples README.md AGENTS.md package.json tsconfig.json .github/workflows/ci.yml release-files.json",
+    "format:check": "prettier --check scripts src tests docs skills examples README.md AGENTS.md package.json tsconfig.json .github/workflows/ci.yml release-files.json"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.537",
+    "@remotion/cli": "4.0.537",
+    "@remotion/renderer": "4.0.537",
+    "fflate": "0.8.2",
+    "playwright": "1.63.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "remotion": "4.0.537",
+    "rss-parser": "3.13.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3"
+  }
+}
